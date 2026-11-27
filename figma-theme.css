@@ -1,0 +1,31 @@
+/* Synced from Figma 272:2, 2026-11-18. Local font, no system installation required. */
+@font-face{font-family:Joystix;src:url('assets/fonts/joystix-monospace.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+:root{--blue:#0510f5;--ink:#000;--cream:#fff}
+body:not(.projector){background:#000;color:#fff}
+body:not(.projector)>header{background:var(--blue);border-color:#fff}
+.brand{font:30px Joystix,monospace;color:#fff}.brand span{font:20px Joystix,monospace;letter-spacing:1px;border-color:#fff}
+body:not(.projector)>main{grid-template-columns:86px minmax(0,.9fr) minmax(0,1fr);gap:10px 12px;padding:14px 16px 10px}
+.title-row .eyebrow{color:#b9bdff;font-size:9px;letter-spacing:2px}
+.title-row h1{font:400 min(21px,2.65cqw)/1.4 Joystix,monospace;letter-spacing:.02em;color:#d8daff;white-space:nowrap}
+.directive{background:#1d2069;color:#fff;border:3px solid var(--blue);box-shadow:0 5px #071015;grid-template-columns:48px minmax(0,1fr);gap:16px}
+.directive h2{font-size:14px}.directive #detail{font-size:10px}.speaker{font-size:10px}.terminal-cursor{color:var(--blue)}
+.directive .officer{background:#0006;border:0}.officer-head{background:var(--blue);border-top-color:#fff}.officer-head:after{background:#000;border-bottom-color:var(--blue)}.officer-body{background:#fff;color:#0d0f14}.officer small{background:#000;color:#fff}
+.steps>span,.steps .done{font:400 16px Joystix,monospace;background:var(--blue);color:#fff;border:4px solid #fff;box-shadow:none;padding:10px 8px;gap:7px;min-height:63px}
+.steps b{font:400 8px Joystix,monospace;letter-spacing:0;margin:0}.steps .active{background:#fff;color:var(--blue);border-color:var(--blue);box-shadow:none}
+.camera-shell{background:var(--blue);box-shadow:0 6px #0b1418}.panel-label{font-size:7px;letter-spacing:0}
+#standby{background:linear-gradient(#12102b78,#0a091ccc);gap:20px}#standby h3{font:400 clamp(9px,1.75vw,15px)/24px Joystix,monospace;letter-spacing:1px;margin:10px 0 0;color:#fff;max-width:100%}
+.target-icon{color:var(--blue);border-color:var(--blue)}#standby button{font-size:10px;background:var(--blue);border-color:#fff;color:#fff}
+.camera-footer{min-height:23px}.conveyor{border-bottom-color:#356b73;background:repeating-linear-gradient(90deg,#4f5f62 0,#9aa3a0 6px,#25383d 12px,var(--blue) 12px,var(--blue) 16px)}
+.dossier{background:#fff;color:var(--blue);border-top-color:var(--blue);padding:12px 14px}
+.paper-heading{border-color:var(--blue)}.paper-heading>span{font:400 14px/22.4px Joystix,monospace}.paper-heading b{font:11px monospace}
+.barcode{background:repeating-linear-gradient(90deg,var(--blue) 0 2px,transparent 2px 4px,var(--blue) 4px 5px,transparent 5px 9px,var(--blue) 9px 13px,transparent 13px 16px)}
+.record-title,#log,.paper-bottom{border-color:var(--blue)}#log:empty:before,.paper-note,.paper-bottom{color:var(--blue)}
+.paper-note{font-size:9px;line-height:1.5}.pending-seal{font:400 17px/27.2px Joystix,monospace;border:3px solid #ae4c39;padding:1px 9px}
+.control-deck{background:#1d2069;border-color:var(--blue)}.gesture-help .eyebrow,#instruction,.gesture-help small{color:#fff}
+.answers button{background:#216a37;border:0;color:#fff;padding:6px;gap:6px}.answers #no{background:#ae4c39;border:0;color:#fff}.answers span{font-size:10px}.answers small{font-size:7px}.answers button:disabled{opacity:1}
+.operator:not([open])>summary{font-size:0}.operator:not([open]){width:32px;height:18px}.operator:not([open])>summary{height:18px;list-style:none}.operator:not([open])>summary::-webkit-details-marker{display:none}
+@media(max-width:620px){.brand{font-size:22px}.brand span{font-size:clamp(8px,2.5vw,14px)}body:not(.projector)>main{grid-template-columns:52px minmax(0,1fr) minmax(0,1fr);padding:8px;gap:7px}.steps>span{font-size:13px;padding:10px 3px}.steps b{font-size:5px}.paper-heading>span{font-size:8px}.directive{grid-template-columns:1fr}.pending-seal{font-size:12px}#standby h3{font-size:8px;letter-spacing:0}}
+/* Keep projection setup discoverable without scrolling. */
+.operator:not([open]){width:auto;height:auto}
+.operator:not([open])>summary{font-size:10px;height:auto;list-style:none;background:#0510f5;color:#fff;border:1px solid #fff;border-radius:2px;padding:3px 9px;line-height:1.4;letter-spacing:0}
+.operator[open]{color:#fff;background:#1d2069;border-color:#0510f5}
